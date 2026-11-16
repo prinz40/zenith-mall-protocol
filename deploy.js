@@ -32,7 +32,7 @@ async function main() {
   const factory = new ethers.ContractFactory(abi, bytecode, wallet);
 
   // Mock USDC address for testing - Replace with Base Sepolia USDC if you have one
-  const MOCK_USDC = ethers.getAddress("0x036CbD53842c5426634e79221eFf3B02A54A5e7D6b"); // Keep your test token for now
+  const MOCK_USDC = ethers.getAddress("0x036CbD53842c5426634e7929541eC2318f3dCF7e");
   console.log("Deploying ZenithMallEscrow...");
   const contract = await factory.deploy(MOCK_USDC);
   console.log("Waiting for confirmation...");
